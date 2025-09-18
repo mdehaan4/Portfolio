@@ -147,11 +147,13 @@ class Portfolio {
   setupNavigation() {
     // Smooth scrolling for navigation links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
+      anchor.addEventListener('click', function (this: HTMLAnchorElement, e: Event) {
         e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href')!);
+        const href = this.getAttribute('href');
+        if (!href) return;
+        const target = document.querySelector(href);
         if (target) {
-          target.scrollIntoView({
+          (target as HTMLElement).scrollIntoView({
             behavior: 'smooth',
             block: 'start'
           });
@@ -166,8 +168,7 @@ class Portfolio {
 
       let current = '';
       sections.forEach(section => {
-        const sectionTop = (section as HTMLElement).offsetTop;
-        const sectionHeight = (section as HTMLElement).offsetHeight;
+  const sectionTop = (section as HTMLElement).offsetTop;
         if (window.pageYOffset >= sectionTop - 200) {
           current = section.getAttribute('id') || '';
         }
@@ -193,9 +194,12 @@ class Portfolio {
       const email = (document.getElementById('email') as HTMLInputElement).value;
       const message = (document.getElementById('message') as HTMLTextAreaElement).value;
 
-      // Here you would typically send the form data to a server
-      // For now, we'll just show a success message
-      this.showNotification('Thank you for your message! I\'ll get back to you soon.', 'success');
+      // Log the submission (replace with API call when backend is available)
+      console.log('Contact form submitted:', { name, email, message });
+
+      // Show a personalized success message
+      const displayName = name ? name.split(' ')[0] : 'there';
+      this.showNotification(`Thank you, ${displayName}! I'll get back to you soon.`, 'success');
       contactForm.reset();
     });
   }
