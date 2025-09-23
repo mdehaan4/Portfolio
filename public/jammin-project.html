@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jammin - Spotify Playlist Creator - Matthew De Haan</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/portfolio.css">
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="/">Matthew De Haan</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="bi bi-arrow-left me-1"></i>Back to Portfolio
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Project Hero Section -->
+    <section class="project-hero py-5 bg-primary text-white">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <h1 class="display-4 fw-bold mb-3">Jammin</h1>
+            <p class="lead mb-4">A modern React + TypeScript + Vite app for searching Spotify, building playlists, and saving them to your Spotify account.</p>
+            <div class="d-flex gap-3 mb-4">
+              <a href="https://jamminsongs.netlify.app/" class="btn btn-light btn-lg" target="_blank">
+                <i class="bi bi-globe me-2"></i>View Live Site
+              </a>
+              <a href="https://github.com/mdehaan4/Jammin" class="btn btn-outline-light btn-lg" target="_blank">
+                <i class="bi bi-github me-2"></i>View Code
+              </a>
+              <a href="/" class="btn btn-outline-light btn-lg">
+                <i class="bi bi-arrow-left me-2"></i>Back to Portfolio
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <img src="/images/Jamminsongs22.png" class="img-fluid rounded shadow-lg" alt="Jammin Spotify Playlist Creator">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Details -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <h2 class="mb-4">About the Project</h2>
+            <p class="lead">Jammin is a modern web application that integrates with the Spotify API to provide users with an enhanced playlist creation experience. Built with React, TypeScript, and Vite, the app implements Spotify's PKCE authentication flow for secure access.</p>
+            
+            <p>Users can search for tracks, build custom playlists with an intuitive interface, and save their creations directly to their Spotify account. The application includes comprehensive end-to-end testing with Cypress to ensure reliability and user experience quality.</p>
+
+            <h3 class="mt-5 mb-3">Key Features</h3>
+            <div class="row">
+              <div class="col-md-6">
+                <ul class="list-unstyled">
+                  <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Spotify PKCE Authentication</li>
+                  <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Music Search & Discovery</li>
+                  <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Custom Playlist Creation</li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <ul class="list-unstyled">
+                  <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Save to Spotify Account</li>
+                  <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Responsive UI</li>
+                  <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>End-to-End Testing</li>
+                </ul>
+              </div>
+            </div>
+
+            <h3 class="mt-5 mb-3">Technical Implementation</h3>
+            <p>The application leverages modern web technologies with React for the component architecture, TypeScript for type safety, and Vite for fast development and building. The Spotify Web API integration uses the secure PKCE (Proof Key for Code Exchange) authentication flow, ensuring user data protection.</p>
+            
+            <p>CSS Modules provide scoped styling for maintainable code, while Cypress testing ensures the application works reliably across different scenarios and user interactions. The responsive design ensures optimal experience across desktop and mobile devices.</p>
+
+            <h3 class="mt-5 mb-3">User Experience</h3>
+            <p>The application provides an intuitive interface for music discovery and playlist management. Users can easily search for songs, preview tracks, and organize them into custom playlists. The seamless integration with Spotify means playlists are immediately available in the user's Spotify account across all their devices.</p>
+          </div>
+
+          <!-- Sidebar -->
+          <div class="col-lg-4">
+            <div class="card">
+              <div class="card-header">
+                <h5 class="mb-0">Technologies Used</h5>
+              </div>
+              <div class="card-body">
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="badge bg-primary">React</span>
+                  <span class="badge bg-primary">TypeScript</span>
+                  <span class="badge bg-primary">Vite</span>
+                  <span class="badge bg-primary">Spotify API</span>
+                  <span class="badge bg-primary">CSS Modules</span>
+                  <span class="badge bg-primary">Cypress</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mt-4">
+              <div class="card-header">
+                <h5 class="mb-0">Project Links</h5>
+              </div>
+              <div class="card-body">
+                <div class="d-grid gap-2">
+                  <a href="https://jamminsongs.netlify.app/" class="btn btn-primary" target="_blank">
+                    <i class="bi bi-globe me-2"></i>Live Application
+                  </a>
+                  <a href="https://github.com/mdehaan4/Jammin" class="btn btn-outline-primary" target="_blank">
+                    <i class="bi bi-github me-2"></i>GitHub Repository
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <p>&copy; 2025 Matthew De Haan. All rights reserved.</p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <p>Built with TypeScript & Bootstrap</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
